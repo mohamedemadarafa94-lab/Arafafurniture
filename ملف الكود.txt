@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض عرفة للأثاث | Arafa Furniture - الفخامة والأصالة</title>
+    
+    <!-- Google Fonts: Amiri & Tajawal & Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,700&family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        arafa: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb', // Matches Logo Core Blue (#2d68c4 / #1e5bb8)
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#172554',
+                            950: '#0b1329'
+                        },
+                        gold: {
+                            400: '#f6d365',
+                            500: '#d4af37',
+                            600: '#b89228'
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        tajawal: ['Tajawal', 'sans-serif'],
+                        amiri: ['Amiri', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+            overflow-x: hidden;
+        }
+
+        .arafa-brand-text {
+            font-family: 'Amiri', serif;
+            letter-spacing: -0.5px;
+        }
+
+        .glass-header {
+            background: rgba(11, 19, 41, 0.94);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .royal-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #172554 100%);
+        }
+
+        .gold-shimmer {
+            background: linear-gradient(135deg, #fce9a5 0%, #d4af37 50%, #a37f19 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .badge-instapay {
+            background: linear-gradient(135deg, #581c87 0%, #7e22ce 100%);
+        }
+
+        .product-card {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.18);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b1329;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2563eb;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
+    </style>
+</head>
+<body class="selection:bg-arafa-600 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-arafa-950 via-arafa-900 to-arafa-950 text-slate-200 text-xs sm:text-sm py-2.5 px-4 border-b border-arafa-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-arafa-600/30 text-arafa-300 border border-arafa-500/40">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    متاح الآن
+                </span>
+                <span class="font-medium text-slate-300">أرقى موبيليا ببورسعيد | خشب زان أحمر طبيعي | ضمان 5 سنوات معتمد</span>
+            </div>
+            <div class="flex items-center gap-5 text-xs">
+                <a href="tel:01226126344" class="hover:text-gold-400 transition flex items-center gap-1.5 font-bold dir-ltr">
+                    <i class="fa-solid fa-phone text-arafa-400"></i> 01226126344
+                </a>
+                <span class="text-slate-600 hidden sm:inline">|</span>
+                <div class="flex items-center gap-1.5 text-purple-300 font-bold hidden sm:flex">
+                    <i class="fa-solid fa-bolt-lightning text-yellow-400"></i> حجز فوري بـ InstaPay
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="sticky top-0 z-40 glass-header border-b border-arafa-900 text-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo & Brand Representation based on user logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-white to-blue-50 border-2 border-arafa-500/40 shadow-lg flex items-center justify-center p-1 group-hover:scale-105 transition-all">
+                        <!-- Custom Stylized Calligraphic Logo Mark matching user image -->
+                        <div class="w-full h-full rounded-xl bg-gradient-to-b from-blue-50 to-blue-100 flex items-center justify-center overflow-hidden">
+                            <span class="arafa-brand-text font-black text-2xl text-arafa-600 tracking-tight select-none">عـرفه</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xl sm:text-2xl font-black tracking-tight block text-white">
+                                معرض <span class="text-arafa-400">عرفة</span> للأثاث
+                            </span>
+                        </div>
+                        <span class="text-[10px] text-slate-400 block tracking-widest uppercase">Arafa Luxury Furniture &bull; بورسعيد</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center gap-7 font-semibold text-sm">
+                    <a href="#hero" class="text-arafa-400 hover:text-white transition">الرئيسية</a>
+                    <a href="#about" class="text-slate-300 hover:text-arafa-400 transition">عن عرفة</a>
+                    <a href="#catalog" class="text-slate-300 hover:text-arafa-400 transition">الكتالوج والموديلات</a>
+                    <a href="#instapay-section" class="text-slate-300 hover:text-arafa-400 transition">دفع InstaPay</a>
+                    <a href="#calculator" class="text-slate-300 hover:text-arafa-400 transition">حاسبة التقسيط</a>
+                    <a href="#reviews" class="text-slate-300 hover:text-arafa-400 transition">آراء عملائنا</a>
+                    <a href="#contact" class="text-slate-300 hover:text-arafa-400 transition">الموقع والاتصال</a>
+                </nav>
+
+                <!-- Quick Action Buttons -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openInstaPayModal('حجز فوري عبر الهيدر')" class="badge-instapay hover:opacity-95 text-white font-bold px-4 py-2.5 rounded-xl text-xs flex items-center gap-2 shadow-lg hover:shadow-purple-700/30 transition transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>InstaPay فوري</span>
+                    </button>
+                    <a href="https://wa.me/201226126344?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%B1%D9%81%D8%A9%20%D9%84%D9%84%D8%A3%D8%AB%D8%A7%D8%AB%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2.5 rounded-xl text-xs flex items-center gap-2 shadow-lg transition transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>واتساب المعرض</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="menuToggle" aria-label="القائمة" class="lg:hidden text-white hover:text-arafa-400 p-2 text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobileNav" class="hidden lg:hidden bg-arafa-950 border-b border-arafa-800 px-6 py-6 transition-all duration-300">
+            <div class="flex flex-col gap-4 font-semibold text-sm">
+                <a href="#hero" class="text-arafa-400 py-1" onclick="toggleMenu()">الرئيسية</a>
+                <a href="#about" class="text-slate-300 hover:text-arafa-400 py-1" onclick="toggleMenu()">عن عرفة للأثاث</a>
+                <a href="#catalog" class="text-slate-300 hover:text-arafa-400 py-1" onclick="toggleMenu()">كتالوج الموديلات</a>
+                <a href="#instapay-section" class="text-slate-300 hover:text-arafa-400 py-1" onclick="toggleMenu()">الدفع عبر InstaPay</a>
+                <a href="#calculator" class="text-slate-300 hover:text-arafa-400 py-1" onclick="toggleMenu()">حاسبة التقسيط</a>
+                <a href="#reviews" class="text-slate-300 hover:text-arafa-400 py-1" onclick="toggleMenu()">آراء العملاء</a>
+                <a href="#contact" class="text-slate-300 hover:text-arafa-400 py-1" onclick="toggleMenu()">تواصل معنا وموقع المعرض</a>
+                <div class="pt-4 border-t border-arafa-800 flex flex-col gap-2.5">
+                    <button onclick="openInstaPayModal('طلب حجز موبايل'); toggleMenu()" class="w-full py-3 rounded-xl badge-instapay text-white font-bold text-xs flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-money-bill-transfer"></i> دفع وحجز InstaPay (01226126344)
+                    </button>
+                    <a href="tel:01226126344" class="w-full py-3 rounded-xl bg-arafa-600 hover:bg-arafa-500 text-white font-bold text-xs flex justify-center items-center gap-2 text-center">
+                        <i class="fa-solid fa-phone"></i> اتصال مباشر: 01226126344
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-b from-arafa-950 via-arafa-900 to-slate-900 text-white pt-12 pb-24 lg:py-28 overflow-hidden">
+        <!-- Ambient Glow Effects -->
+        <div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-arafa-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute -bottom-40 -left-40 w-[450px] h-[450px] bg-gold-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 text-center lg:text-right space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-arafa-900/90 border border-arafa-700/60 text-xs sm:text-sm text-arafa-300 font-bold shadow-inner">
+                        <i class="fa-solid fa-crown text-gold-400"></i>
+                        <span>معرض عرفة للأثاث بورسعيد - خبرة عريقة في صناعة الموبيليا</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight">
+                        فخامة تليق ببيتك <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-arafa-400 to-gold-400">
+                            بأعلى معايير خشب الزان الأحمر
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0 font-normal">
+                        مرحباً بكم في <strong>معرض عرفة للأثاث</strong>. نقدم لكم غرف النوم الماستر، الركنات والصالونات، وغرف السفرة الفاخرة بتشطيبات VIP وضمان 5 سنوات. ادفع عربونك أو حجزك بضغطة زر عبر <strong>إنستاباي (InstaPay)</strong> واستلم أينما كنت في مصر.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-3">
+                        <a href="#catalog" class="bg-gradient-to-r from-arafa-600 to-arafa-700 hover:from-arafa-500 hover:to-arafa-600 text-white font-extrabold px-8 py-4 rounded-2xl shadow-xl shadow-arafa-600/30 transition transform hover:-translate-y-1 flex items-center gap-2.5 text-sm sm:text-base">
+                            <i class="fa-solid fa-couch"></i> استكشف الموديلات والأسعار
+                        </a>
+                        <button onclick="openInstaPayModal('استفسار مباشر من الواجهة الرئيسية')" class="bg-slate-800/90 hover:bg-slate-700 border border-slate-700 hover:border-arafa-500 text-white font-bold px-7 py-4 rounded-2xl shadow-lg transition transform hover:-translate-y-1 flex items-center gap-2.5 text-sm sm:text-base">
+                            <i class="fa-solid fa-wallet text-gold-400"></i> الحجز والدفع (InstaPay)
+                        </button>
+                    </div>
+
+                    <!-- Trust indicators -->
+                    <div class="pt-6 border-t border-arafa-800/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8 text-slate-300 text-xs sm:text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone-volume text-arafa-400 text-base"></i>
+                            <span>المبيعات: <strong class="text-white dir-ltr">01226126344</strong></span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-facebook text-blue-400 text-base"></i>
+                            <a href="https://www.facebook.com/portsaidFurniture/" target="_blank" rel="noopener noreferrer" class="hover:text-arafa-400 underline decoration-slate-600">الصفحة الرسمية</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-truck text-emerald-400 text-base"></i>
+                            <span>شحن لكافة المحافظات</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-arafa-500 to-gold-500 rounded-3xl blur-xl opacity-30"></div>
+                        
+                        <div class="relative bg-arafa-950 rounded-3xl overflow-hidden border-2 border-arafa-800 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" 
+                                 alt="أثاث عرفة ببورسعيد" 
+                                 class="w-full h-80 sm:h-[420px] object-cover hover:scale-105 transition-transform duration-700"
+                                 onerror="this.src='https://placehold.co/800x600/172554/ffffff?text=Arafa+Furniture'">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-arafa-950 via-transparent to-transparent"></div>
+                            
+                            <!-- Floating Card with Arafa Logo Stamp -->
+                            <div class="absolute bottom-5 right-5 left-5 bg-arafa-900/90 backdrop-blur-md p-4 rounded-2xl border border-arafa-700/60 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center p-1 shadow-md">
+                                        <span class="arafa-brand-text font-black text-xl text-arafa-600">عـرفه</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-extrabold text-sm">مؤسسة عرفة للأثاث</h4>
+                                        <p class="text-xs text-arafa-300">جودة وفخامة لا تضاهى &bull; تصنيع عمولة</p>
+                                    </div>
+                                </div>
+                                <span class="bg-gold-500 text-slate-950 font-black text-xs px-3 py-1.5 rounded-lg shadow">
+                                    ضمان 5 سنين
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits Bar -->
+    <section class="bg-white border-b border-slate-200 py-8 relative -mt-6 rounded-t-3xl shadow-sm z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                
+                <div class="p-3">
+                    <div class="w-12 h-12 rounded-2xl bg-arafa-50 text-arafa-600 flex items-center justify-center text-xl mx-auto mb-3">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-800 text-sm sm:text-base">خشب زان أحمر أصلي</h3>
+                    <p class="text-xs text-slate-500 mt-1">طبيعي 100% بدون حشوات رديئة</p>
+                </div>
+
+                <div class="p-3">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl mx-auto mb-3">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-800 text-sm sm:text-base">سداد سريع InstaPay</h3>
+                    <p class="text-xs text-slate-500 mt-1">على رقم 01226126344 بأمان تام</p>
+                </div>
+
+                <div class="p-3">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mx-auto mb-3">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-800 text-sm sm:text-base">ضمان 5 سنوات</h3>
+                    <p class="text-xs text-slate-500 mt-1">شهادة ضمان وفحص دقيق قبل الشحن</p>
+                </div>
+
+                <div class="p-3">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mx-auto mb-3">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-800 text-sm sm:text-base">توصيل وتركيب</h3>
+                    <p class="text-xs text-slate-500 mt-1">فريق فني متخصص حتى باب منزلك</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="py-16 sm:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-arafa-600 font-extrabold text-xs sm:text-sm tracking-wider uppercase inline-block mb-1 bg-arafa-100 px-3 py-1 rounded-full">كتالوج أثاث عرفة 2026</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mb-3">أحدث تصميمات وموديلات الأثاث</h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    اختر ما يلائم بيتك، يمكنك طلب المعاينة أو حجز العربون فوراً برقم المعرض 01226126344 عبر تطبيق إنستاباي.
+                </p>
+
+                <!-- Filter Category Tabs -->
+                <div class="flex flex-wrap justify-center gap-2 mt-8" id="categoryTabs">
+                    <button onclick="filterCategory('all')" class="cat-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-arafa-600 text-white shadow-md transition" data-category="all">
+                        الكل
+                    </button>
+                    <button onclick="filterCategory('bedrooms')" class="cat-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="bedrooms">
+                        غرف نوم Master
+                    </button>
+                    <button onclick="filterCategory('salons')" class="cat-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="salons">
+                        صالونات وركنات مودرن
+                    </button>
+                    <button onclick="filterCategory('dining')" class="cat-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="dining">
+                        غرف سفرة ونيش
+                    </button>
+                    <button onclick="filterCategory('kids')" class="cat-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="kids">
+                        غرف أطفال وشبابي
+                    </button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamically populated via JS -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- InstaPay Payment Center Section -->
+    <section id="instapay-section" class="py-16 sm:py-24 bg-gradient-to-br from-arafa-950 via-arafa-900 to-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-arafa-900/80 border-2 border-arafa-700/60 rounded-3xl p-6 sm:p-12 backdrop-blur-md shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-900/60 text-purple-300 border border-purple-500/40 text-xs font-bold">
+                            <i class="fa-solid fa-shield-halved text-purple-400"></i> نظام السداد والحجز الرسمي
+                        </div>
+
+                        <h2 class="text-2xl sm:text-4xl font-black leading-tight">
+                            ادفع عربونك أو قيمة الأثاث عبر <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-gold-400">
+                                تطبيق InstaPay والمحافظ الإلكترونية
+                            </span>
+                        </h2>
+
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            حرصاً من إدارة <strong>معرض عرفة للأثاث</strong> على راحة عملائنا داخل وخارج محافظة بورسعيد، يمكنكم إتمام الحجز الفوري وتحويل الدفعة المقدمة عبر رقمنا المعتمد على إنستاباي بكل سهولة وأمان دون الحاجة للحضور الشخصي.
+                        </p>
+
+                        <!-- Highlighted Payment Details Card -->
+                        <div class="bg-arafa-950/90 border border-arafa-700 rounded-2xl p-6 space-y-5 shadow-inner">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-arafa-800 pb-5">
+                                <div>
+                                    <span class="text-xs text-slate-400 block mb-1">رقم هاتف التحويل المعتمد (InstaPay & كاش):</span>
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-2xl sm:text-3xl font-black text-arafa-400 tracking-wider dir-ltr select-all font-mono" id="copyablePhone">01226126344</span>
+                                        <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full border border-emerald-500/30 font-bold">
+                                            معتمد ومسجل باسم المعرض
+                                        </span>
+                                    </div>
+                                </div>
+                                <button onclick="copyPhoneText()" class="self-start sm:self-center flex items-center gap-2 bg-arafa-600 hover:bg-arafa-500 text-white font-extrabold px-5 py-3 rounded-xl text-xs sm:text-sm shadow-md transition transform active:scale-95">
+                                    <i class="fa-regular fa-copy"></i>
+                                    <span id="copyPhoneLabel">نسخ الرقم فوراً</span>
+                                </button>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300">
+                                <div class="bg-arafa-900/60 p-3 rounded-xl border border-arafa-800 flex items-center gap-2.5">
+                                    <i class="fa-solid fa-mobile-screen-button text-purple-400 text-lg"></i>
+                                    <span>تطبيق InstaPay لجميع البنوك</span>
+                                </div>
+                                <div class="bg-arafa-900/60 p-3 rounded-xl border border-arafa-800 flex items-center gap-2.5">
+                                    <i class="fa-solid fa-wallet text-amber-400 text-lg"></i>
+                                    <span>فودافون كاش ومحافظ المحمول</span>
+                                </div>
+                                <div class="bg-arafa-900/60 p-3 rounded-xl border border-arafa-800 flex items-center gap-2.5">
+                                    <i class="fa-solid fa-receipt text-emerald-400 text-lg"></i>
+                                    <span>توثيق فوري وعقد إلكتروني</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment CTA Actions -->
+                        <div class="flex flex-wrap items-center gap-3 pt-2">
+                            <button onclick="openInstaPayModal('حجز معتمد من صفحة إنستاباي')" class="badge-instapay text-white font-black px-6 py-3.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-lg hover:brightness-110 transition">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>إرسال إشعار تحويل وتأكيد الحجز</span>
+                            </button>
+                            <a href="tel:01226126344" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-5 py-3.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 border border-slate-700">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>اتصال بخدمة العملاء</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Step-by-Step Box -->
+                    <div class="lg:col-span-5 bg-arafa-950 p-6 sm:p-8 rounded-3xl border border-arafa-800">
+                        <h4 class="text-base font-extrabold text-arafa-300 mb-5 flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i> خطوات إتمام الحجز في 3 دقائق
+                        </h4>
+                        <ol class="space-y-5 text-xs sm:text-sm text-slate-300">
+                            <li class="flex items-start gap-3.5">
+                                <span class="w-7 h-7 rounded-full bg-arafa-600 text-white font-black flex items-center justify-center shrink-0 text-xs">1</span>
+                                <div>
+                                    <strong class="text-white block font-bold">اختيار الموديل:</strong>
+                                    اختر الغرفة أو الموديل واعرف كود المنتج وسعره من الكتالوج.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3.5">
+                                <span class="w-7 h-7 rounded-full bg-arafa-600 text-white font-black flex items-center justify-center shrink-0 text-xs">2</span>
+                                <div>
+                                    <strong class="text-white block font-bold">التحويل عبر إنستاباي:</strong>
+                                    افتح تطبيق InstaPay وقم بالتحويل لرقم الهاتف: <strong class="text-arafa-400 font-mono">01226126344</strong>.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3.5">
+                                <span class="w-7 h-7 rounded-full bg-arafa-600 text-white font-black flex items-center justify-center shrink-0 text-xs">3</span>
+                                <div>
+                                    <strong class="text-white block font-bold">إرسال إشعار الدفع واتساب:</strong>
+                                    أرسل صورة إشعار التحويل لتصلك فاتورة الحجز وتاريخ التسليم المعتمد.
+                                </div>
+                            </li>
+                        </ol>
+
+                        <div class="mt-8 pt-5 border-t border-arafa-800/80 flex items-center justify-between">
+                            <span class="text-xs text-slate-400">فيسبوك المعرض:</span>
+                            <a href="https://www.facebook.com/portsaidFurniture/" target="_blank" rel="noopener noreferrer" class="text-xs text-blue-400 hover:text-blue-300 font-bold flex items-center gap-1.5">
+                                <i class="fa-brands fa-facebook"></i> facebook.com/portsaidFurniture
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installment Calculator Section -->
+    <section id="calculator" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-arafa-600 font-bold text-xs sm:text-sm tracking-wider uppercase inline-block mb-1 bg-arafa-50 px-3 py-1 rounded-full">خطط سداد ميسرة</span>
+                <h2 class="text-3xl font-black text-slate-900 mb-2">حاسبة التقسيط الذكية لمعرض عرفة</h2>
+                <p class="text-slate-600 text-sm">
+                    اختر قيمة الأثاث والمقدم المناسب لاحتساب القسط الشهري التقديري بسهولة.
+                </p>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    
+                    <!-- Controls Column -->
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-xs sm:text-sm font-bold text-slate-700">سعر الموديل أو إجمالي الأثاث:</label>
+                                <span class="text-sm font-black text-arafa-700" id="calcPriceLabel">65,000 ج.م</span>
+                            </div>
+                            <input type="range" id="priceRange" min="20000" max="250000" step="5000" value="65000" class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-arafa-600">
+                            <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                                <span>20,000 ج.م</span>
+                                <span>250,000 ج.م</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-xs sm:text-sm font-bold text-slate-700">الدفعة المقدمة (عربون الحجز):</label>
+                                <span class="text-sm font-black text-arafa-700" id="calcDownLabel">15,000 ج.م</span>
+                            </div>
+                            <input type="range" id="downRange" min="0" max="100000" step="2500" value="15000" class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-arafa-600">
+                            <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                                <span>بدون مقدم</span>
+                                <span>100,000 ج.م</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs sm:text-sm font-bold text-slate-700 mb-2">مدة سداد الأقساط:</label>
+                            <div class="grid grid-cols-4 gap-2" id="monthsBtnGroup">
+                                <button type="button" onclick="setCalcMonths(6)" class="month-pill py-2.5 text-xs font-bold rounded-xl border border-slate-300 text-slate-700 hover:border-arafa-600" data-val="6">6 شهور</button>
+                                <button type="button" onclick="setCalcMonths(12)" class="month-pill active py-2.5 text-xs font-bold rounded-xl border bg-arafa-600 text-white border-arafa-600" data-val="12">12 شهر</button>
+                                <button type="button" onclick="setCalcMonths(24)" class="month-pill py-2.5 text-xs font-bold rounded-xl border border-slate-300 text-slate-700 hover:border-arafa-600" data-val="24">24 شهر</button>
+                                <button type="button" onclick="setCalcMonths(36)" class="month-pill py-2.5 text-xs font-bold rounded-xl border border-slate-300 text-slate-700 hover:border-arafa-600" data-val="36">36 شهر</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculated Result -->
+                    <div class="bg-arafa-950 text-white rounded-3xl p-6 sm:p-8 text-center space-y-5 border-2 border-arafa-800 shadow-xl">
+                        <span class="text-xs text-arafa-400 font-bold uppercase tracking-wider block">القسط الشهري التقريبي</span>
+                        <div class="text-3xl sm:text-5xl font-black text-white">
+                            <span id="calcMonthlyResult">4,667</span> <span class="text-sm font-bold text-arafa-400">ج.م / شهر</span>
+                        </div>
+                        
+                        <div class="border-t border-arafa-800 pt-4 space-y-2 text-xs text-slate-300 text-right">
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">المبلغ المتبقي للتقسيط:</span>
+                                <span class="font-bold text-white" id="calcRemainingResult">50,000 ج.م</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">طريقة دفع المقدم:</span>
+                                <span class="font-bold text-purple-400">InstaPay (01226126344)</span>
+                            </div>
+                        </div>
+
+                        <button onclick="sendInstallmentWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold py-3.5 rounded-xl text-xs sm:text-sm transition shadow-lg flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>تقديم طلب التقسيط عبر الواتساب</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="py-16 sm:py-24 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-arafa-600 font-bold text-xs sm:text-sm tracking-wider uppercase inline-block mb-1 bg-arafa-100 px-3 py-1 rounded-full">ثقة عملائنا</span>
+                <h2 class="text-3xl font-black text-slate-900 mb-3">ماذا يقول عملاء "معرض عرفة للأثاث"؟</h2>
+                <p class="text-slate-600 text-sm">
+                    نفخر بخدمة أكثر من 3000 عميل وعروسين في بورسعيد وجميع المحافظات.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="flex text-amber-400 mb-3 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+                        "اشتريت غرفة النوم والسفرة من معرض عرفة ببورسعيد، خشب الزان محمل جداً وتشطيب البوليستر والدهانات فاخرة كأنها مستوردة. التحويل بإنستاباي كان سهل جداً وبدون أي تعقيد."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-arafa-100 text-arafa-700 flex items-center justify-center font-bold text-sm">
+                            م.أ
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">محمد إبراهيم السيد</h4>
+                            <span class="text-[11px] text-slate-400">عميل من بورسعيد (حي الشرق)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="flex text-amber-400 mb-3 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+                        "أنا من القاهرة وحجزت الركنة وصالون فيرونا بعد ما شوفت شغلهم على الفيسبوك، حولت العربون على إنستاباي 01226126344 ووصلتني البضاعة لحد باب البيت بتغليف محكم جداً وفريق تركيب ممتاز."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-arafa-100 text-arafa-700 flex items-center justify-center font-bold text-sm">
+                            د.س
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">سارة الشناوي</h4>
+                            <span class="text-[11px] text-slate-400">عميلة من التجمع الخامس - القاهرة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="flex text-amber-400 mb-3 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+                        "معرض عرفة عنوان للأمانة والمصداقية. اتعاملت معاهم لتجهيز شقة ابني بالكامل، ملتزمين بمواعيد التسليم وخامات الأقمشة والإسفنج من الدرجة الأولى. أنصح بالتعامل معهم بشدة."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-arafa-100 text-arafa-700 flex items-center justify-center font-bold text-sm">
+                            ح.م
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">الحاج محمود عبد الرازق</h4>
+                            <span class="text-[11px] text-slate-400">عميل من الإسماعيلية</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-arafa-600 font-bold text-xs sm:text-sm tracking-wider uppercase inline-block mb-1">نسعد باستقبالكم وتواصلكم</span>
+                        <h2 class="text-3xl font-black text-slate-900 mb-3">تواصل مع إدارة معرض عرفة للأثاث</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            فريق خدمة العملاء جاهز للرد على كل استفساراتكم حول تفصيل الأثاث بالمقاس، الأسعار، ومواعيد الشحن والتسليم.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Phone & InstaPay item -->
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                            <div class="w-12 h-12 rounded-xl bg-arafa-100 text-arafa-600 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-sm text-slate-900">الهاتف وخدمة InstaPay المعتمدة</h4>
+                                <a href="tel:01226126344" class="text-arafa-600 font-black text-lg hover:underline dir-ltr block text-right font-mono">01226126344</a>
+                                <span class="text-[11px] text-slate-500">متاح اتصال هاتفي وواتساب وإنستاباي طوال الأسبوع</span>
+                            </div>
+                        </div>
+
+                        <!-- Facebook Page item -->
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-sm text-slate-900">الصفحة الرسمية على الفيسبوك</h4>
+                                <a href="https://www.facebook.com/portsaidFurniture/" target="_blank" rel="noopener noreferrer" class="text-blue-600 text-sm hover:underline font-bold block mt-0.5">
+                                    facebook.com/portsaidFurniture
+                                </a>
+                                <span class="text-[11px] text-slate-500">تابع أحدث الموديلات الجديدة والفيديوهات الحية</span>
+                            </div>
+                        </div>
+
+                        <!-- Location item -->
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-sm text-slate-900">مقر المعرض والمصنع</h4>
+                                <p class="text-xs sm:text-sm text-slate-700">بورسعيد - جمهورية مصر العربية</p>
+                                <span class="text-[11px] text-slate-500">شحن آمن وفوري لجميع المحافظات مع التركيب</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fast Contact Form -->
+                <div class="lg:col-span-7 bg-slate-50 p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-sm">
+                    <h3 class="text-xl font-black text-slate-900 mb-1">طلب معاينة أو استفسار مخصص</h3>
+                    <p class="text-slate-500 text-xs sm:text-sm mb-6">اترك تفاصيل طلبك وسنقوم بالرد عليك مباشرة عبر الواتساب أو الهاتف.</p>
+
+                    <form id="contactForm" onsubmit="handleInquirySubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">الاسم بالكامل</label>
+                                <input type="text" id="custName" required placeholder="أدخل اسمك" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-arafa-500 text-xs sm:text-sm bg-white">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">رقم الهاتف (واتساب)</label>
+                                <input type="tel" id="custPhone" required placeholder="01xxxxxxxxx" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-arafa-500 text-xs sm:text-sm bg-white">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">القسم المطلوب</label>
+                                <select id="custCategory" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-arafa-500 text-xs sm:text-sm bg-white">
+                                    <option value="غرفة نوم ماستر">غرف نوم Master</option>
+                                    <option value="صالون أو ركنة مودرن">صالونات وركنات مودرن</option>
+                                    <option value="غرفة سفرة كاملة">غرف سفرة ونيش</option>
+                                    <option value="غرفة أطفال وشبابي">غرف أطفال وشبابي</option>
+                                    <option value="تصنيع وتفصيل عمولة">تفصيل عمولة حسب المقاس</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">المحافظة أو المدينة للتوصيل</label>
+                                <input type="text" id="custCity" placeholder="بورسعيد، القاهرة، الإسكندرية..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-arafa-500 text-xs sm:text-sm bg-white">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">تفاصيل الموديل أو الرسالة</label>
+                            <textarea id="custMessage" rows="3" placeholder="اكتب الموديل المطلوب أو أي استفسار ترغب به..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-arafa-500 text-xs sm:text-sm bg-white"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-arafa-600 hover:bg-arafa-700 text-white font-extrabold py-3.5 rounded-xl text-xs sm:text-sm transition duration-300 shadow-md flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg text-emerald-300"></i>
+                            <span>إرسال الاستفسار لخدمة عملاء عرفة للأثاث</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-arafa-950 text-white border-t border-arafa-900 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                
+                <!-- Col 1: Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center p-1">
+                            <span class="arafa-brand-text font-black text-xl text-arafa-600">عـرفه</span>
+                        </div>
+                        <span class="text-xl font-black">معرض <span class="text-arafa-400">عرفة</span> للأثاث</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        معرض عرفة للأثاث ببورسعيد - متخصصون في أرقى الموديلات المودرن والكلاسيك وتجهيز شقق العرسان بخامات زان أحمر وتنجيد فندقي فاخر.
+                    </p>
+                    <div class="text-xs text-arafa-400 font-bold">
+                        <i class="fa-solid fa-phone ml-1"></i> الخط الساخن: 01226126344
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-4 border-b border-arafa-800 pb-2">روابط سريعة</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-400">
+                        <li><a href="#hero" class="hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="#catalog" class="hover:text-white transition">كتالوج الموديلات</a></li>
+                        <li><a href="#instapay-section" class="hover:text-white transition">دفع وحجز بـ InstaPay</a></li>
+                        <li><a href="#calculator" class="hover:text-white transition">حاسبة التقسيط</a></li>
+                        <li><a href="#reviews" class="hover:text-white transition">آراء وتقييمات العملاء</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Product Sections -->
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-4 border-b border-arafa-800 pb-2">أقسام الأثاث</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-400">
+                        <li><a href="#catalog" onclick="filterCategory('bedrooms')" class="hover:text-white transition">غرف نوم ماستر كاملة</a></li>
+                        <li><a href="#catalog" onclick="filterCategory('salons')" class="hover:text-white transition">صالونات وركنات مودرن L-Shape</a></li>
+                        <li><a href="#catalog" onclick="filterCategory('dining')" class="hover:text-white transition">سفرة كاملة مع نيش وبوفيه</a></li>
+                        <li><a href="#catalog" onclick="filterCategory('kids')" class="hover:text-white transition">غرف أطفال وشبابي</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Payments and Social -->
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-4 border-b border-arafa-800 pb-2">بيانات الدفع والفيسبوك</h4>
+                    <p class="text-xs text-slate-400 mb-3">سداد العربون عبر إنستاباي أو المحافظ الإلكترونية:</p>
+                    <div class="bg-arafa-900/90 p-3.5 rounded-xl border border-arafa-800 text-xs text-slate-300 space-y-1.5">
+                        <div class="flex justify-between">
+                            <span>InstaPay:</span>
+                            <span class="text-arafa-400 font-bold font-mono dir-ltr">01226126344</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>فيسبوك:</span>
+                            <a href="https://www.facebook.com/portsaidFurniture/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">portsaidFurniture</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-arafa-900 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 معرض عرفة للأثاث (Arafa Furniture - Port Said). جميع الحقوق محفوظة.</p>
+                <div class="flex items-center gap-4">
+                    <a href="https://www.facebook.com/portsaidFurniture/" target="_blank" rel="noopener noreferrer" class="hover:text-arafa-400 transition">صفحتنا على فيسبوك</a>
+                    <span>&bull;</span>
+                    <a href="tel:01226126344" class="hover:text-arafa-400 transition">01226126344</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 left-6 z-40 flex flex-col gap-3">
+        <!-- Floating InstaPay Quick Button -->
+        <button onclick="openInstaPayModal('الزر العائم السريع')" class="w-13 h-13 p-3.5 rounded-full badge-instapay text-white flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300 border-2 border-white/20" title="دفع وحجز عبر InstaPay">
+            <i class="fa-solid fa-mobile-screen-button text-xl"></i>
+        </button>
+
+        <!-- Floating Phone Button -->
+        <a href="tel:01226126344" class="w-13 h-13 p-3.5 rounded-full bg-arafa-600 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300 border-2 border-white/20" title="اتصل بمعرض عرفة">
+            <i class="fa-solid fa-phone text-lg"></i>
+        </a>
+
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/201226126344?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%B1%D9%81%D8%A9%20%D9%84%D9%84%D8%A3%D8%AB%D8%A7%D8%AB%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA" target="_blank" rel="noopener noreferrer" class="w-13 h-13 p-3.5 rounded-full bg-emerald-600 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300 border-2 border-white/20" title="واتساب المعرض">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Product Details Modal -->
+    <div id="productModal" class="fixed inset-0 z-50 hidden bg-arafa-950/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl border border-slate-200 transform transition-all my-8">
+            <div class="relative">
+                <img id="modalProductImage" src="" alt="صورة الموديل" class="w-full h-64 sm:h-80 object-cover">
+                <button onclick="closeProductModal()" class="absolute top-4 left-4 w-9 h-9 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="absolute bottom-4 right-4 bg-arafa-950/90 text-arafa-400 px-3.5 py-1 rounded-xl text-xs font-bold" id="modalProductBadge">
+                    كود: #AR-01
+                </div>
+            </div>
+
+            <div class="p-6 sm:p-8 space-y-4">
+                <div class="flex flex-wrap justify-between items-start gap-2">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-black text-slate-900" id="modalProductTitle">اسم الموديل</h3>
+                        <p class="text-xs text-slate-500 mt-1" id="modalProductCategory">قسم الأثاث</p>
+                    </div>
+                    <div class="text-left">
+                        <span class="text-2xl font-black text-arafa-600 block" id="modalProductPrice">0 ج.م</span>
+                        <span class="text-[11px] text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded">متاح تقسيط حتى 36 شهر</span>
+                    </div>
+                </div>
+
+                <p class="text-slate-600 text-sm leading-relaxed" id="modalProductDesc">
+                    تفاصيل وصف الغرفة ونوع الأخشاب المستخدمة.
+                </p>
+
+                <!-- Specs Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs">
+                    <div>
+                        <span class="text-slate-400 block mb-0.5">نوع الخشب:</span>
+                        <strong class="text-slate-900" id="modalProductWood">زان أحمر روماني</strong>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 block mb-0.5">فترة الضمان:</span>
+                        <strong class="text-slate-900">5 سنوات كاملة</strong>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 block mb-0.5">التشطيب:</span>
+                        <strong class="text-slate-900" id="modalProductFinish">دوكو / استر بوليستر</strong>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex flex-wrap gap-3 pt-4 border-t border-slate-100">
+                    <button id="modalInstaPayBtn" class="flex-1 badge-instapay hover:brightness-110 text-white font-bold py-3.5 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>حجز عربون بـ InstaPay</span>
+                    </button>
+                    <button id="modalWhatsAppBtn" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>استفسار واتساب</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- InstaPay Fast Transfer Modal -->
+    <div id="instaPayModal" class="fixed inset-0 z-50 hidden bg-arafa-950/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 p-6 sm:p-8 my-8">
+            <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-lg font-bold">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-black text-slate-900">بوابة الدفع السريع InstaPay</h3>
+                        <p class="text-[11px] text-slate-500">معرض عرفة للأثاث بورسعيد</p>
+                    </div>
+                </div>
+                <button onclick="closeInstaPayModal()" class="text-slate-400 hover:text-slate-700 text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="py-5 space-y-4 text-sm text-slate-700">
+                <p class="text-xs text-slate-500">
+                    حجز موديل / استفسار: <strong class="text-arafa-700" id="instaPayTargetTitle">طلب حجز عام</strong>
+                </p>
+
+                <!-- Phone number copy box -->
+                <div class="bg-slate-50 p-4 rounded-2xl border border-purple-200 flex items-center justify-between">
+                    <div>
+                        <span class="text-[11px] text-purple-800 font-bold block">رقم التحويل (إنستاباي / كاش):</span>
+                        <span class="text-2xl font-black text-purple-950 tracking-wider dir-ltr block select-all font-mono">01226126344</span>
+                    </div>
+                    <button onclick="copyPhoneText()" class="bg-purple-700 hover:bg-purple-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
+                        نسخ الرقم
+                    </button>
+                </div>
+
+                <!-- Fast Confirmation Form -->
+                <form id="transferForm" onsubmit="handleTransferSubmit(event)" class="space-y-3 pt-2">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">اسم المحول الثلاثي</label>
+                        <input type="text" id="senderName" required placeholder="الاسم كما يظهر في التحويل" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-purple-600 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">المبلغ المحول (جنيه)</label>
+                        <input type="number" id="senderAmount" required placeholder="مثال: 5000" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-purple-600 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">الرقم المرجعي أو رقم المحفظة (اختياري)</label>
+                        <input type="text" id="senderRef" placeholder="رقم العملية أو رقم الهاتف المحول منه" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-purple-600 focus:outline-none">
+                    </div>
+
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 mt-4 transition shadow-md">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>إرسال إشعار التحويل للمعرض وتأكيد الحجز</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Banner -->
+    <div id="toastNotification" class="fixed top-5 left-1/2 -translate-x-1/2 z-50 hidden bg-arafa-950 text-white px-6 py-3.5 rounded-2xl shadow-2xl border border-arafa-500/40 text-xs sm:text-sm flex items-center gap-2.5 transition-all">
+        <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+        <span id="toastMessageText">تم نسخ الرقم بنجاح!</span>
+    </div>
+
+    <script>
+        // Catalog Products Dataset (Arafa Furniture)
+        const arafaProducts = [
+            {
+                id: "AR-101",
+                name: "غرفة نوم ماستر رويال الإيطالية",
+                category: "bedrooms",
+                categoryAr: "غرف نوم Master",
+                price: "68,000 ج.م",
+                rawPrice: 68000,
+                wood: "خشب زان أحمر روماني طبيعي",
+                finish: "دوكو فرن + قشرة جوز تركي",
+                desc: "تتضمن سرير كينج 180×200 سم بتنجيد هيدبورد كابوتونيه مستورد، دولاب جرار 3 ضلف كبير مع إضاءة LED داخلية مستشعرة للحركة، تسريحة فاخرة مع مرايا ليزر و2 كومودينو وبف جلوس ناعم.",
+                image: "https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: "AR-102",
+                name: "صالون نيو كلاسيك الملكي (فيرونا)",
+                category: "salons",
+                categoryAr: "صالونات وركنات مودرن",
+                price: "56,000 ج.م",
+                rawPrice: 56000,
+                wood: "هيكل زان أحمر مجفف مدعم بالكامل",
+                finish: "شامبين دهبي هادئ وراقي",
+                desc: "مكون من كنبة 3 مقاعد، كنبة 2 مقعد، و2 فوتيه برنسيسة مريح، مع ترابيزة رخام كرارة أبيض طبيعي. تنجيد إسفنج كثافة 36 سوفت وأقمشة قطيفة مستوردة معالجة ضد الاتساخ.",
+                image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: "AR-103",
+                name: "غرفة سفرة إليجانت كاملة 8 كراسي",
+                category: "dining",
+                categoryAr: "غرف سفرة ونيش",
+                price: "62,000 ج.م",
+                rawPrice: 62000,
+                wood: "زان أحمر مبخر",
+                finish: "استر بولستر فائق اللمعان",
+                desc: "ترابيزة سفرة بطول 230 سم مع 8 كراسي كابوتونيه مريحة للغاية، وبوفيه عريض بمرايات إيطالية مع نيش عصري مزود بإضاءة سبوت لايت دافئة وأرفف زجاج سيكوريت.",
+                image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: "AR-104",
+                name: "ركنة مودرن L-Shape أمريكان مع سحارة",
+                category: "salons",
+                categoryAr: "صالونات وركنات مودرن",
+                price: "34,000 ج.م",
+                rawPrice: 34000,
+                wood: "زان طبيعي مع شاسيه ميكانيزم متين",
+                finish: "قماش كتان وتربروف معالج",
+                desc: "مقاس 330×240 سم تتحول لسرير واسع بلمسة واحدة مع مساحة تخزين هيدروليكية أسفل الشيزلونج، وترابيزة وسطية بوف خفيفة وسهلة الحركة.",
+                image: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: "AR-105",
+                name: "غرفة أطفال وشبابي سكاي كيدز",
+                category: "kids",
+                categoryAr: "غرف أطفال وشبابي",
+                price: "44,000 ج.م",
+                rawPrice: 44000,
+                wood: "زان أحمر مع ألواح MDF تايلاندي",
+                finish: "دوكو ملون صديق للأطفال",
+                desc: "تتكون من 2 سرير 120 سم، دولاب جرار ضلفتين، مكتب دراسة عصري بأرفف كتب ومكتبة، وكومودينو وسطى، توفر أقصى استغلال للمساحة بتصميم مبهج ودائم.",
+                image: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: "AR-106",
+                name: "غرفة نوم مودرن بورسعيدي كلاس",
+                category: "bedrooms",
+                categoryAr: "غرف نوم Master",
+                price: "72,000 ج.م",
+                rawPrice: 72000,
+                wood: "زان روماني ثقيل",
+                finish: "مكس أوف وايت مع حليات معدنية ذهبية",
+                desc: "تصميم انسيابي هادئ ومريح، دريسنج كابينة داخلية بالدولاب مع زجاج أسود فاميه وإضاءة داخلية، وسرير عريض ومريح مصمم لأقصى راحة واسترخاء.",
+                image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80"
+            }
+        ];
+
+        // Mobile Menu Logic
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        menuToggle.addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            mobileNav.classList.toggle('hidden');
+        }
+
+        // Render Catalog Cards
+        function displayProducts(list) {
+            const container = document.getElementById('productsGrid');
+            container.innerHTML = '';
+
+            list.forEach(p => {
+                const el = document.createElement('div');
+                el.className = "bg-white rounded-3xl overflow-hidden border border-slate-200 product-card flex flex-col";
+                el.innerHTML = `
+                    <div class="relative overflow-hidden group">
+                        <img src="${p.image}" alt="${p.name}" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/172554/ffffff?text=Arafa+Furniture'">
+                        <span class="absolute top-3 right-3 bg-arafa-950/80 backdrop-blur-sm text-arafa-300 text-xs font-bold px-3 py-1 rounded-full border border-arafa-500/20">
+                            ${p.categoryAr}
+                        </span>
+                    </div>
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-1.5">
+                                <span class="text-[11px] font-bold text-slate-400 font-mono">كود: ${p.id}</span>
+                                <span class="text-xs text-emerald-600 font-bold"><i class="fa-solid fa-tree ml-1"></i>خشب زان أصلي</span>
+                            </div>
+                            <h3 class="text-lg font-black text-slate-900 group-hover:text-arafa-600 transition leading-snug">${p.name}</h3>
+                            <p class="text-slate-500 text-xs line-clamp-2 mt-2 leading-relaxed">${p.desc}</p>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <span class="text-[11px] text-slate-400 block">سعر الكاش:</span>
+                                    <span class="text-xl font-black text-arafa-700">${p.price}</span>
+                                </div>
+                                <button onclick="openProductModal('${p.id}')" class="text-xs text-arafa-600 font-bold hover:text-arafa-800 flex items-center gap-1 transition">
+                                    المواصفات <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                                </button>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="openInstaPayModal('${p.name} (كود ${p.id})')" class="badge-instapay hover:brightness-110 text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1 transition shadow-sm">
+                                    <i class="fa-solid fa-mobile-screen"></i> عربون InstaPay
+                                </button>
+                                <a href="https://wa.me/201226126344?text=${encodeURIComponent('مرحبا معرض عرفة للأثاث، أود الاستفسار عن ' + p.name + ' - كود: ' + p.id)}" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1 transition shadow-sm">
+                                    <i class="fa-brands fa-whatsapp"></i> واتساب
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(el);
+            });
+        }
+
+        // Category Filtering
+        function filterCategory(categoryName) {
+            const buttons = document.querySelectorAll('.cat-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-category') === categoryName) {
+                    btn.className = "cat-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-arafa-600 text-white shadow-md transition";
+                } else {
+                    btn.className = "cat-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition";
+                }
+            });
+
+            if (categoryName === 'all') {
+                displayProducts(arafaProducts);
+            } else {
+                const filtered = arafaProducts.filter(p => p.category === categoryName);
+                displayProducts(filtered);
+            }
+        }
+
+        // Product Details Modal
+        function openProductModal(productId) {
+            const item = arafaProducts.find(x => x.id === productId);
+            if (!item) return;
+
+            document.getElementById('modalProductTitle').innerText = item.name;
+            document.getElementById('modalProductCategory').innerText = item.categoryAr;
+            document.getElementById('modalProductPrice').innerText = item.price;
+            document.getElementById('modalProductDesc').innerText = item.desc;
+            document.getElementById('modalProductWood').innerText = item.wood;
+            document.getElementById('modalProductFinish').innerText = item.finish;
+            document.getElementById('modalProductImage').src = item.image;
+            document.getElementById('modalProductBadge').innerText = `كود الموديل: #${item.id}`;
+
+            document.getElementById('modalInstaPayBtn').onclick = () => {
+                closeProductModal();
+                openInstaPayModal(`${item.name} (${item.id})`);
+            };
+
+            document.getElementById('modalWhatsAppBtn').onclick = () => {
+                const message = `مرحبا معرض عرفة للأثاث، أود الاستفسار والتفاوض بخصوص ${item.name} كود (${item.id}) بقيمة ${item.price}`;
+                window.open(`https://wa.me/201226126344?text=${encodeURIComponent(message)}`, '_blank');
+            };
+
+            document.getElementById('productModal').classList.remove('hidden');
+        }
+
+        function closeProductModal() {
+            document.getElementById('productModal').classList.add('hidden');
+        }
+
+        // InstaPay Modal Logic
+        let activePayTarget = "حجز عام";
+
+        function openInstaPayModal(targetName) {
+            activePayTarget = targetName || "استفسار عام";
+            document.getElementById('instaPayTargetTitle').innerText = activePayTarget;
+            document.getElementById('instaPayModal').classList.remove('hidden');
+        }
+
+        function closeInstaPayModal() {
+            document.getElementById('instaPayModal').classList.add('hidden');
+        }
+
+        // Copy Phone Number
+        function copyPhoneText() {
+            const phoneStr = "01226126344";
+            const input = document.createElement("input");
+            input.value = phoneStr;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand("copy");
+            document.body.removeChild(input);
+
+            showToastBanner("تم نسخ رقم إنستاباي بنجاح: 01226126344");
+        }
+
+        function showToastBanner(msg) {
+            const toast = document.getElementById('toastNotification');
+            const toastText = document.getElementById('toastMessageText');
+            toastText.innerText = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+
+        // Handle Transfer submission through WhatsApp
+        function handleTransferSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('senderName').value;
+            const amount = document.getElementById('senderAmount').value;
+            const ref = document.getElementById('senderRef').value || 'لم يحدد';
+
+            const formattedMsg = `السلام عليكم ورحمة الله وبركاته،\nمعرض عرفة للأثاث بورسعيد،\nلقد قمت بتحويل دفعة حجز عبر تطبيق InstaPay لرقمكم 01226126344.\n\nبيانات العملية:\n- الغرض / الموديل: ${activePayTarget}\n- اسم المحول: ${name}\n- المبلغ المحول: ${amount} جنيه مصري\n- الرقم المرجعي أو المحفظة: ${ref}\n\nبرجاء مراجعة وتأكيد استلام العربون وتحديد خطوات التسليم.`;
+
+            closeInstaPayModal();
+            window.open(`https://wa.me/201226126344?text=${encodeURIComponent(formattedMsg)}`, '_blank');
+        }
+
+        // Handle general inquiry submission
+        function handleInquirySubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const category = document.getElementById('custCategory').value;
+            const city = document.getElementById('custCity').value || 'غير محدد';
+            const msg = document.getElementById('custMessage').value || 'طلب استفسار ومعاينة';
+
+            const summary = `طلب تواصل جديد لمعرض عرفة للأثاث:\n- اسم العميل: ${name}\n- رقم الهاتف: ${phone}\n- القسم: ${category}\n- محافظة التوصيل: ${city}\n- التفاصيل: ${msg}`;
+
+            window.open(`https://wa.me/201226126344?text=${encodeURIComponent(summary)}`, '_blank');
+        }
+
+        // Installment Calculator logic
+        const priceSlider = document.getElementById('priceRange');
+        const downSlider = document.getElementById('downRange');
+        let selectedInstallmentMonths = 12;
+
+        function refreshCalculator() {
+            let price = parseInt(priceSlider.value);
+            let down = parseInt(downSlider.value);
+
+            if (down >= price) {
+                down = price - 2000;
+                downSlider.value = down;
+            }
+
+            document.getElementById('calcPriceLabel').innerText = price.toLocaleString('ar-EG') + ' ج.م';
+            document.getElementById('calcDownLabel').innerText = down.toLocaleString('ar-EG') + ' ج.م';
+
+            const remaining = price - down;
+            document.getElementById('calcRemainingResult').innerText = remaining.toLocaleString('ar-EG') + ' ج.م';
+
+            // Approx simple flat interest calculation (~12% per year)
+            const annualInterest = 0.12;
+            const totalInterest = remaining * (annualInterest * (selectedInstallmentMonths / 12));
+            const totalWithInterest = remaining + totalInterest;
+            const monthlyPayment = Math.round(totalWithInterest / selectedInstallmentMonths);
+
+            document.getElementById('calcMonthlyResult').innerText = monthlyPayment.toLocaleString('ar-EG');
+        }
+
+        function setCalcMonths(m) {
+            selectedInstallmentMonths = m;
+            document.querySelectorAll('.month-pill').forEach(btn => {
+                if (parseInt(btn.getAttribute('data-val')) === m) {
+                    btn.className = "month-pill active py-2.5 text-xs font-bold rounded-xl border bg-arafa-600 text-white border-arafa-600";
+                } else {
+                    btn.className = "month-pill py-2.5 text-xs font-bold rounded-xl border border-slate-300 text-slate-700 hover:border-arafa-600";
+                }
+            });
+            refreshCalculator();
+        }
+
+        function sendInstallmentWhatsApp() {
+            const price = priceSlider.value;
+            const down = downSlider.value;
+            const monthly = document.getElementById('calcMonthlyResult').innerText;
+
+            const text = `مرحبا إدارة معرض عرفة للأثاث، أود الاستفسار عن خطة التقسيط التالية:\n- سعر الأثاث الإجمالي: ${price} ج.م\n- المقدم المقترح: ${down} ج.م\n- عدد الأشهر: ${selectedInstallmentMonths} شهر\n- القسط الشهري المحسوب: ${monthly} ج.م\n\nأرجو توضيح المستندات المطلوبة وطريقة إتمام التعاقد.`;
+
+            window.open(`https://wa.me/201226126344?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        priceSlider.addEventListener('input', refreshCalculator);
+        downSlider.addEventListener('input', refreshCalculator);
+
+        // Outside modal dismiss
+        window.addEventListener('click', function(ev) {
+            const prodModal = document.getElementById('productModal');
+            const payModal = document.getElementById('instaPayModal');
+            if (ev.target === prodModal) closeProductModal();
+            if (ev.target === payModal) closeInstaPayModal();
+        });
+
+        // Initialize application on load
+        window.addEventListener('DOMContentLoaded', () => {
+            displayProducts(arafaProducts);
+            refreshCalculator();
+        });
+    </script>
+</body>
+</html>
